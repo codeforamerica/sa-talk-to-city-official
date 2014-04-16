@@ -6,6 +6,7 @@ TalkToCityOfficial::Application.routes.draw do
   # root 'welcome#index'
 
   post 'twilio/voice' => 'twilio#voice'
+  get 'twilio/handle_record' => 'twilio#handle_record'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
