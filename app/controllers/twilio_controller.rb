@@ -11,7 +11,7 @@ class TwilioController < ApplicationController
     response = Twilio::TwiML::Response.new do |r|
       r.Say 'Hey there. Congrats on integrating Twilio into your Rails 4 app.', :voice => 'alice'
          # r.Play 'http://linode.rabasa.com/cantina.mp3'
-         r.Record :maxLength => '60', :action => 'twilio/handle_record', :method => 'get'
+         r.Record :maxLength => '60', :action => 'http://talktoyourcityofficial.herokuapp.com/twilio/handle_record', :method => 'get'
     end
  
     render_twiml response
