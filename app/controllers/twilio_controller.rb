@@ -23,5 +23,6 @@ class TwilioController < ApplicationController
       r.Play params['RecordingUrl']
       r.Say 'Goodbye.'
       puts params['RecordingUrl']
-    
+    end
+  end
 end
